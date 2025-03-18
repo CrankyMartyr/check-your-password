@@ -1,0 +1,77 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  --light-brown: #eecea0; /* Background or subtle accents */
+  --tan: #D9C3AC; /* Secondary elements */
+  --brown: #A68072; /* Primary UI elements */
+  --dark-brown: #6D4C41; /* Text or headers */
+  --charcoal-brown: #3E2723; /* Buttons or highlights */
+}
+
+body {
+  background-color: #fadbb9;
+  margin: 0;
+
+  font-family: 'Roboto Mono', 'Courier New', monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+header {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--dark-brown);
+  padding: 40px 0 20px; /* Added extra padding for spacing */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adds spacing between elements */
+}
+
+label {
+  font-size: 1.5rem;
+  color: var(--brown);
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid var(--brown);
+  border-radius: 5px;
+  background-color: #dcbc9a;
+  color: #D9C3AC;
+  width: 100%; /* Adjust to your preferred width */
+  height: 40px; /* Fixed height */
+  padding: 10px; /* Consistent padding */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  border: 1px solid #8c756a; /* Matches your color palette */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--dark-brown);
+  color: var(--light-brown);
+  border: 1px solid var(--dark-brown);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--brown);
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important
+}
